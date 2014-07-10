@@ -18,11 +18,11 @@ Dependency manifests are stored in the directory tree, where each level is defin
 consequent two letters of the dependency name. For example, for the given name "cassandra"
 the directory tree would be:
 
-├── ca
-│   └── ss
-│       └── an
-│           └── dr
-│               └── cassandra.json
+    ├── ca
+    │   └── ss
+    │       └── an
+    │           └── dr
+    │               └── cassandra.json
 
 
 To add a new manifest, find the relevant directory in the tree (create one if it doesn't exist),
