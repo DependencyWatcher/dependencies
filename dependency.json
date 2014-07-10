@@ -1,0 +1,101 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Dependency definition",
+	"description": "This manifest defines dependency and rules used for its information retrieval",
+	
+	"definitions": {
+		"detector": {
+			"description": "Detector is a technique for information retrieval",
+			"type": "object",
+			"properties": {
+				"xpath": {
+					"description": "XPath based detector",
+					"type": "object",
+					"properties": {
+						"url": {
+							"description": "Website URL",
+							"type": "string"
+						},
+						"exp": {
+							"description": "XPath expression",
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	
+	"type": "object",
+	"properties": {
+		"name": {
+			"description": "Dependency name",
+			"type": "string"
+		},
+		"pages": {
+			"description": "Various Web pages URLs",
+			"type": "object",
+			"properties": {
+				"home": {
+					"description": "Official homepage URL",
+					"type": "string"
+				},
+				"versions": {
+					"description": "Page containing versions list",
+					"type": "string"
+				},
+				"license": {
+					"description": "License page",
+					"type": "string"
+				},
+				"changelist": {
+					"description": "Page containing changelog",
+					"type": "string"
+				}
+			},
+			"required": ["home"]
+		},
+		"detectors": {
+			"description": "Techniques for detecting dependency updates",
+			"type": "object",
+			"properties": {
+				"version": {
+					"description": "Latest version detector",
+					"$ref": "#/definitions/detector"
+				},
+				"changelist": {
+					"description": "Latest version changelist detector",
+					"$ref": "#/definitions/detector"
+				},
+				"license": {
+					"description": "License name detector",
+					"$ref": "#/definitions/detector"
+				}
+			},
+			"required": ["version"]
+		},
+		"aliases": {
+			"description": "Dependency aliases in different frameworks",
+			"type": "object",
+			"properties": {
+				"maven": {
+					"description": "Maven name of the dependency",
+					"type": "object",
+					"properties": {
+						"group": {
+							"description": "Maven group ID",
+							"type": "string"
+						},
+						"artifact": {
+							"description": "Maven artifact ID",
+							"type": "string"
+						}
+					},
+					"required": ["group", "artifact"]
+				}
+			}
+		}
+	},
+	"required": ["name", "pages", "detectors"]
+}
+
