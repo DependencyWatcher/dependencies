@@ -26,5 +26,5 @@ the directory tree would be:
 
 
 To add a new manifest, find the relevant directory in the tree (create one if it doesn't exist),
-then add a new file named "<dependency name>.json", which conforms to the dependency JSON schema.
+then add a new file named `<dependency name>.json`, which conforms to the dependency JSON schema.
 
