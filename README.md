@@ -1,7 +1,7 @@
 dependencies
 =============
 
-This project contains dependency definitions in JSON format defined by the schema file.
+This project contains dependency definitions in JSON format defined by the [schema](https://github.com/DependencyWatcher/dependencies/blob/master/dependency.json) file.
 
 ### What can be a dependency? ###
 
