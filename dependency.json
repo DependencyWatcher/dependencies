@@ -1,11 +1,11 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"title": "Dependency definition",
-	"description": "This manifest defines dependency and rules used for its information retrieval",
+	"title": "Dependency manifest",
+	"description": "This manifest declares dependency, and defines rules for updating its information",
 	
 	"definitions": {
 		"detector": {
-			"description": "Detector is a technique for information retrieval",
+			"description": "Detector is a technique for updating information",
 			"type": "object",
 			"properties": {
 				"xpath": {
@@ -75,7 +75,7 @@
 			"required": ["version"]
 		},
 		"aliases": {
-			"description": "Dependency aliases in different frameworks",
+			"description": "Dependency aliases in different toolkits",
 			"type": "object",
 			"properties": {
 				"maven": {
