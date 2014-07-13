@@ -31,7 +31,7 @@ the directory tree would be:
     │           └── s
     │               └── cassandra.json
 
-Templates are stored in the same way under the `_` directory.
+Templates are stored in the same way under the `_t` directory.
 
 To add a new manifest, find the relevant directory in the tree (create one if it doesn't exist),
 then add a new file named `<dependency name>.json`, which conforms to the dependency JSON schema.

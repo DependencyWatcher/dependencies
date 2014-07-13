@@ -1,0 +1,30 @@
+{
+  "pages": {
+    "download": "http://commons.apache.org/proper/${NAME}/download_${SHORT_LC_NAME}.cgi", 
+    "docs": "http://commons.apache.org/${SHORT_LC_NAME}/javadocs/api-${VERSION}/index.html", 
+    "changelist": "http://commons.apache.org/proper/${NAME}/changes-report.html", 
+    "issues": "http://issues.apache.org/jira/browse/${SHORT_UC_NAME}", 
+    "home": "http://commons.apache.org/proper/${NAME}"
+  }, 
+  "detectors": {
+    "changelist": {
+      "xpath": {
+        "url": "http://commons.apache.org/proper/${NAME}/changes-report.html", 
+        "exp": "//a[@name='a${VERSION}']/following-sibling::table"
+      }
+    }, 
+    "version": {
+      "xpath": {
+        "url": "http://commons.apache.org/proper/${NAME}/changes-report.html", 
+        "exp": "//a[@name='Release_History']/following-sibling::table/tbody/tr[2]/td[1]"
+      }
+    }, 
+    "updateDate": {
+      "xpath": {
+        "url": "http://commons.apache.org/proper/${NAME}/changes-report.html", 
+        "exp": "//a[@name='Release_History']/following-sibling::table/tbody/tr[2]/td[2]"
+      }
+    }
+  }, 
+  "license": "Apache License, Version 2.0"
+}
