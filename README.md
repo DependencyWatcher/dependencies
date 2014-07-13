@@ -16,8 +16,8 @@ Dependency, as its name says, is something that a project depends on. Examples a
 
 Dependency name along with the its homepage URL must define it in a unique manner.
 There may be aliases used in different frameworks/toolkits as well. For instance,
-the name "apache-kafka" and the URL "https://kafka.apache.org/" can be used for defining
-Apache Kafka, and one of its aliases would be "org.apache.kafka:kafka_2.10" (Maven alias).
+the name `apache-kafka` and the URL "https://kafka.apache.org/" can be used for defining
+Apache Kafka, and one of its aliases would be `org.apache.kafka:kafka_2.10` (Maven alias).
 
 ### Contribution ###
 
@@ -31,6 +31,7 @@ the directory tree would be:
     │           └── s
     │               └── cassandra.json
 
+Templates are stored in the same way under the `_` directory.
 
 To add a new manifest, find the relevant directory in the tree (create one if it doesn't exist),
 then add a new file named `<dependency name>.json`, which conforms to the dependency JSON schema.

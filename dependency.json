@@ -28,6 +28,10 @@
 	
 	"type": "object",
 	"properties": {
+		"template": {
+			"description": "Name of the template manifest file",
+			"type": "string"
+		},
 		"name": {
 			"description": "Dependency name",
 			"type": "string"
