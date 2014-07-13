@@ -22,16 +22,22 @@ Apache Kafka, and one of its aliases would be "org.apache.kafka:kafka_2.10" (Mav
 ### Contribution ###
 
 Dependency manifests are stored in the directory tree, where each level is defined by the
-consequent two letters of the dependency name. For example, for the given name "cassandra"
+first four letters of the dependency name. For example, for the given name "cassandra"
 the directory tree would be:
 
-    ├── ca
-    │   └── ss
-    │       └── an
-    │           └── dr
+    ├── c
+    │   └── a
+    │       └── s
+    │           └── s
     │               └── cassandra.json
 
 
 To add a new manifest, find the relevant directory in the tree (create one if it doesn't exist),
 then add a new file named `<dependency name>.json`, which conforms to the dependency JSON schema.
+
+### Manifest Generator ###
+
+To make generating of manifest file easier, use script `./generate.py`. This script asks user for needed
+values based on schema file, then generates a JSON file containing the answers user provided.
+
 

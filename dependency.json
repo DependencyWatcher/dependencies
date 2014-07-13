@@ -32,6 +32,10 @@
 			"description": "Dependency name",
 			"type": "string"
 		},
+		"license": {
+			"description": "Dependency license",
+			"type": "string"
+		},
 		"pages": {
 			"description": "Various Web pages URLs",
 			"type": "object",
@@ -40,16 +44,24 @@
 					"description": "Official homepage URL",
 					"type": "string"
 				},
-				"versions": {
-					"description": "Page containing versions list",
+				"download": {
+					"description": "Download page",
 					"type": "string"
 				},
 				"license": {
 					"description": "License page",
 					"type": "string"
 				},
+				"docs": {
+					"description": "Documentation page",
+					"type": "string"
+				},
 				"changelist": {
-					"description": "Page containing changelog",
+					"description": "Changelog page",
+					"type": "string"
+				},
+				"issues": {
+					"description": "Issue Tracker page",
 					"type": "string"
 				}
 			},
@@ -61,6 +73,10 @@
 			"properties": {
 				"version": {
 					"description": "Latest version detector",
+					"$ref": "#/definitions/detector"
+				},
+				"updateDate": {
+					"description": "Latest update date detector",
 					"$ref": "#/definitions/detector"
 				},
 				"changelist": {
@@ -75,24 +91,11 @@
 			"required": ["version"]
 		},
 		"aliases": {
-			"description": "Dependency aliases in different toolkits",
-			"type": "object",
-			"properties": {
-				"maven": {
-					"description": "Maven name of the dependency",
-					"type": "object",
-					"properties": {
-						"group": {
-							"description": "Maven group ID",
-							"type": "string"
-						},
-						"artifact": {
-							"description": "Maven artifact ID",
-							"type": "string"
-						}
-					},
-					"required": ["group", "artifact"]
-				}
+			"description": "Dependency aliases",
+			"type": "array",
+			"items": {
+				"description": "Alias name",
+				"type": "string"
 			}
 		}
 	},
