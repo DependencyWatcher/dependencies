@@ -16,13 +16,16 @@
 							"description": "Website URL",
 							"type": "string"
 						},
-						"exp": {
+						"xpath": {
 							"description": "XPath expression",
 							"type": "string"
 						}
-					}
+					},
+					"required": ["url", "xpath"]
 				}
-			}
+			},
+			"maxProperties": 1,
+			"minProperties": 1
 		},
 		"variable": {
 			"description": "Variable",

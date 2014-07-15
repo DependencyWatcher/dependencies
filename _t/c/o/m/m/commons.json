@@ -10,19 +10,19 @@
     "changelist": {
       "xpath": {
         "url": "http://commons.apache.org/proper/${NAME}/changes-report.html", 
-        "exp": "//a[@name='a${VERSION}']/following-sibling::table"
+        "xpath": "//a[@name='a${VERSION}']/following-sibling::table"
       }
     }, 
     "version": {
       "xpath": {
         "url": "http://commons.apache.org/proper/${NAME}/changes-report.html", 
-        "exp": "//a[@name='Release_History']/following-sibling::table/tbody/tr[2]/td[1]"
+        "xpath": "//a[@name='Release_History']/following-sibling::table/tr[2]/td[1]/a"
       }
     }, 
     "updateDate": {
       "xpath": {
         "url": "http://commons.apache.org/proper/${NAME}/changes-report.html", 
-        "exp": "//a[@name='Release_History']/following-sibling::table/tbody/tr[2]/td[2]"
+        "xpath": "//a[@name='Release_History']/following-sibling::table//tr[2]/td[2]"
       }
     }
   }, 
