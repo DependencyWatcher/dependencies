@@ -75,7 +75,7 @@ if __name__ == '__main__':
 	print("Stored answers to answers.txt")
 
 	name = version["name"]
-	dirname = "/".join([i for i in re.sub("[^a-zA-Z0-9]*", "", name[:4])])
+	dirname = "manifests/%s" % "/".join([i for i in re.sub("[^a-zA-Z0-9]*", "", name[:4])])
 	if not os.path.exists(dirname):
 		os.makedirs(dirname)
 

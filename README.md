@@ -21,11 +21,11 @@ Apache Kafka, and one of its aliases would be `org.apache.kafka:kafka_2.10` (Mav
 
 ### Contribution ###
 
-Dependency manifests are stored in the directory tree under the directory called `_m`,
+Dependency manifests are stored in the directory tree under the directory called `manifests`,
 where each level is defined by the first four letters of the dependency name.
 For example, for the given name "cassandra" the directory tree would be:
 
-    ├── _m
+    ├── manifests
     │   └── c
     │       └── a
     │           └── s
@@ -33,7 +33,7 @@ For example, for the given name "cassandra" the directory tree would be:
     │                   ├── cassandra.json
 
 
-Templates are stored in the same way under the `_t` directory.
+Templates are stored in the same way under the `templates` directory.
 
 To add a new manifest, find the relevant directory in the tree (create one if it doesn't exist),
 then add a new file named `<dependency name>.json`, which conforms to the dependency JSON schema.

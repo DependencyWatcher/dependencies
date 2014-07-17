@@ -1,0 +1,19 @@
+{
+  "extends": {
+    "template": "commons", 
+    "vars": [
+      {
+        "name": "SHORT_LC_NAME",
+        "value": "bcel"
+      },
+      {
+        "name": "SHORT_UC_NAME",
+        "value": "BCEL"
+      }
+    ]
+  }, 
+  "name": "commons-bcel", 
+  "aliases": [
+    "org.apache.bcel:bcel"
+  ]
+}

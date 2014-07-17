@@ -1,0 +1,19 @@
+{
+  "extends": {
+    "template": "commons", 
+    "vars": [
+      {
+        "name": "SHORT_LC_NAME",
+        "value": "chain"
+      },
+      {
+        "name": "SHORT_UC_NAME",
+        "value": "CHAIN"
+      }
+    ]
+  }, 
+  "name": "commons-chain", 
+  "aliases": [
+    "commons-chain:commons-chain"
+  ]
+}

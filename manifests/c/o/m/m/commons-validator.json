@@ -1,0 +1,19 @@
+{
+  "extends": {
+    "template": "commons", 
+    "vars": [
+      {
+        "name": "SHORT_LC_NAME",
+        "value": "validator"
+      },
+      {
+        "name": "SHORT_UC_NAME",
+        "value": "VALIDATOR"
+      }
+    ]
+  }, 
+  "name": "commons-validator", 
+  "aliases": [
+    "commons-validator:commons-validator"
+  ]
+}

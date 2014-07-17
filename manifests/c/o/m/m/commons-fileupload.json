@@ -1,0 +1,19 @@
+{
+  "extends": {
+    "template": "commons", 
+    "vars": [
+      {
+        "name": "SHORT_LC_NAME",
+        "value": "fileupload"
+      },
+      {
+        "name": "SHORT_UC_NAME",
+        "value": "FILEUPLOAD"
+      }
+    ]
+  }, 
+  "name": "commons-fileupload", 
+  "aliases": [
+    "commons-fileupload:commons-fileupload"
+  ]
+}

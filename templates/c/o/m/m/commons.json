@@ -15,14 +15,15 @@
     }, 
     "version": {
       "xpath": {
-        "url": "http://commons.apache.org/proper/${NAME}/changes-report.html", 
-        "xpath": "//a[@name='Release_History']/following-sibling::table/tr[2]/td[1]/a"
+        "url": "http://central.maven.org/maven2/${MVN_PATH}/maven-metadata.xml", 
+        "xpath": "/metadata/versioning/release/text()|/metadata/version/text()"
       }
     }, 
     "updateDate": {
       "xpath": {
-        "url": "http://commons.apache.org/proper/${NAME}/changes-report.html", 
-        "xpath": "//a[@name='Release_History']/following-sibling::table//tr[2]/td[2]"
+        "url": "http://central.maven.org/maven2/${MVN_PATH}/maven-metadata.xml", 
+        "xpath": "/metadata/versioning/lastUpdated/text()",
+		"format": "%Y%m%d%H%M%S"
       }
     }
   }, 

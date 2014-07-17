@@ -12,9 +12,8 @@
       }
     ]
   }, 
-  "name": "commons-math", 
+  "name": "commons-math3", 
   "aliases": [
-    "org.apache.commons:commons-math3", 
-    "commons-math3"
+    "org.apache.commons:commons-math3"
   ]
 }

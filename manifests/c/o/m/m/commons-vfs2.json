@@ -4,17 +4,17 @@
     "vars": [
       {
         "name": "SHORT_LC_NAME",
-        "value": "lang"
+        "value": "vfs"
       },
       {
         "name": "SHORT_UC_NAME",
-        "value": "LANG"
+        "value": "VFS"
       }
     ]
   }, 
-  "name": "commons-lang", 
+  "name": "commons-vfs", 
   "aliases": [
-    "org.apache.commons:commons-lang3", 
-    "commons-lang3"
+    "org.apache.commons:commons-vfs2",
+	"commons-vfs2"
   ]
 }

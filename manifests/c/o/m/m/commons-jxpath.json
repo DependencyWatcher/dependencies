@@ -1,0 +1,19 @@
+{
+  "extends": {
+    "template": "commons", 
+    "vars": [
+      {
+        "name": "SHORT_LC_NAME",
+        "value": "jxpath"
+      },
+      {
+        "name": "SHORT_UC_NAME",
+        "value": "JXPATH"
+      }
+    ]
+  }, 
+  "name": "commons-jxpath", 
+  "aliases": [
+    "commons-jxpath:commons-jxpath"
+  ]
+}

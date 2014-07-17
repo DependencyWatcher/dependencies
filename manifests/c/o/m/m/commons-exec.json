@@ -1,0 +1,19 @@
+{
+  "extends": {
+    "template": "commons", 
+    "vars": [
+      {
+        "name": "SHORT_LC_NAME",
+        "value": "exec"
+      },
+      {
+        "name": "SHORT_UC_NAME",
+        "value": "EXEC"
+      }
+    ]
+  }, 
+  "name": "commons-exec", 
+  "aliases": [
+    "org.apache.commons:commons-exec"
+  ]
+}
