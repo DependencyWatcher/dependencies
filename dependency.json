@@ -112,7 +112,7 @@
 					"description": "Latest version detector",
 					"$ref": "#/definitions/detector"
 				},
-				"updateDate": {
+				"updatetime": {
 					"description": "Latest update date detector",
 					"$ref": "#/definitions/detector"
 				},

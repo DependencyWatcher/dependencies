@@ -14,17 +14,10 @@
       }
     }, 
     "version": {
-      "xpath": {
-        "url": "http://central.maven.org/maven2/${MVN_PATH}/maven-metadata.xml", 
-        "xpath": "/metadata/versioning/release/text()|/metadata/version/text()"
-      }
+      "maven": {}
     }, 
-    "updateDate": {
-      "xpath": {
-        "url": "http://central.maven.org/maven2/${MVN_PATH}/maven-metadata.xml", 
-        "xpath": "/metadata/versioning/lastUpdated/text()",
-		"format": "%Y%m%d%H%M%S"
-      }
+    "updatetime": {
+      "maven": {}
     }
   }, 
   "license": "Apache License, Version 2.0"
