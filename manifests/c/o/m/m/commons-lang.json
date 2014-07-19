@@ -4,16 +4,17 @@
     "vars": [
       {
         "name": "SHORT_LC_NAME",
-        "value": "pool"
+        "value": "lang"
       },
       {
         "name": "SHORT_UC_NAME",
-        "value": "POOL"
+        "value": "LANG"
       }
     ]
   }, 
-  "name": "commons-pool2", 
+  "name": "commons-lang", 
   "aliases": [
-    "org.apache.commons:commons-pool2"
+    "org.apache.commons:commons-lang3",
+	"commons-lang3"
   ]
 }

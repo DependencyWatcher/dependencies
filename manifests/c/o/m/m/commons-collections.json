@@ -4,16 +4,17 @@
     "vars": [
       {
         "name": "SHORT_LC_NAME",
-        "value": "lang"
+        "value": "collections"
       },
       {
         "name": "SHORT_UC_NAME",
-        "value": "LANG"
+        "value": "COLLECTIONS"
       }
     ]
   }, 
-  "name": "commons-lang3", 
+  "name": "commons-collections", 
   "aliases": [
-    "org.apache.commons:commons-lang3"
+    "org.apache.commons:commons-collections4",
+	"commons-collections4"
   ]
 }

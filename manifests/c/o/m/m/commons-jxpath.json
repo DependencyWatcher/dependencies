@@ -13,6 +13,14 @@
     ]
   }, 
   "name": "commons-jxpath", 
+  "detectors": {
+    "changelist": {
+      "xpath": {
+        "url": "http://commons.apache.org/proper/commons-jxpath/release-notes-${VERSION}.html",
+        "xpath": "//a[@name='Bug' or @name='Improvement' or @name='New_Feature']/../../ul//li"
+      }
+    }
+  },
   "aliases": [
     "commons-jxpath:commons-jxpath"
   ]

@@ -4,16 +4,17 @@
     "vars": [
       {
         "name": "SHORT_LC_NAME",
-        "value": "collections"
+        "value": "pool"
       },
       {
         "name": "SHORT_UC_NAME",
-        "value": "COLLECTIONS"
+        "value": "POOL"
       }
     ]
   }, 
-  "name": "commons-collections4", 
+  "name": "commons-pool", 
   "aliases": [
-    "org.apache.commons:commons-collections4"
+    "org.apache.commons:commons-pool2",
+	"commons-pool2"
   ]
 }

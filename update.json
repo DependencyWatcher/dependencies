@@ -1,0 +1,35 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Update manifest",
+	"description": "This manifest defines dependency version related information",
+	
+	"type": "object",
+	"properties": {
+		"name": {
+			"description": "Dependency name",
+			"type": "string"
+		},
+		"version": {
+			"description": "Dependency version",
+			"type": "string"
+		},
+		"license": {
+			"description": "License name",
+			"type": "string"
+		},
+		"updatetime": {
+			"description": "Version release date",
+			"type": "string"
+		},
+		"changelist": {
+			"description": "List of changes for this version",
+			"type": "array"
+			"items": {
+				"description": "A single change for this version",
+				"type": "string"
+			}
+		}
+	},
+	"required": ["name", "version", "license"]
+}
+

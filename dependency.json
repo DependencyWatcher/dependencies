@@ -19,9 +19,31 @@
 						"xpath": {
 							"description": "XPath expression",
 							"type": "string"
+						},
+						"regex": {
+							"description": "Value parsing regular expression rule (value is specified by the single capture group)",
+							"type": "string"
 						}
 					},
 					"required": ["url", "xpath"]
+				},
+				"maven": {
+					"description": "Maven based detector",
+					"type": "object",
+					"properties": {
+						"repository": {
+							"description": "Base URL of the Maven repository",
+							"type": "string"
+						},
+						"xpath": {
+							"description": "XPath expression for the Maven repository metadata XML",
+							"type": "string"
+						},
+						"dateFormat": {
+							"description": "Date parsing format (default: %Y%m%d%H%M%S)",
+							"type": "string"
+						}
+					}
 				}
 			},
 			"maxProperties": 1,

@@ -10,7 +10,7 @@
     "changelist": {
       "xpath": {
         "url": "http://commons.apache.org/proper/${NAME}/changes-report.html", 
-        "xpath": "//a[@name='a${VERSION}']/following-sibling::table"
+        "xpath": "//a[@name='a${VERSION}']/following-sibling::table//td[2]"
       }
     }, 
     "version": {
