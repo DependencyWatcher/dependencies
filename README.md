@@ -1,7 +1,7 @@
 manifests
 =========
 
-This project contains dependency manifests in JSON format defined by the [schema](https://github.com/DependencyWatcher/manifests/blob/master/dependency.json) file.
+This project contains dependency manifests. Manifests contain the rules for retrieving latest information about dependency.
 
 ### What can be a dependency? ###
 
@@ -36,7 +36,16 @@ For example, for the given name "cassandra" the directory tree would be:
 Templates are stored in the same way under the `templates` directory.
 
 To add a new manifest, find the relevant directory in the tree (create one if it doesn't exist),
-then add a new file named `<dependency name>.json`, which conforms to the dependency JSON schema.
+then add a new file named `<dependency name>.json`, which conforms to the dependency [JSON schema](https://github.com/DependencyWatcher/manifests/blob/master/dependency.json) file.
+
+### Variables ###
+
+Here are variables that can be used in a manifest file:
+
+Variable | Description
+---------|-------------
+${NAME}  | This variable is set to the dependency name
+
 
 ### Manifest Generator ###
 
