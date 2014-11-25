@@ -145,6 +145,10 @@
 				"license": {
 					"description": "License name detector",
 					"$ref": "#/definitions/detector"
+				},
+				"url": {
+					"description": "Website URL detector",
+					"$ref": "#/definitions/detector"
 				}
 			},
 			"required": ["version"]
