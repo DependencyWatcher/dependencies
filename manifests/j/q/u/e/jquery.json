@@ -1,0 +1,20 @@
+{
+  "name": "jquery",
+  "pages": {
+    "download": "http://jquery.com/download/",
+    "docs": "http://api.jquery.com/",
+    "changelist": "http://blog.jquery.com/?s=jQuery released",
+    "issues": "https://github.com/jquery/jquery/issues",
+    "home": "http://jquery.com/"
+  }, 
+  "detectors": {
+    "version": {
+      "xpath": {
+        "url": "http://jquery.com/download/", 
+        "xpath": "(//a[contains(text(), 'jQuery ') and contains(text(), ' release notes')]/text())[last()]",
+	"regex": "(\\d+\\.\\d+[^ ]*)"
+      }
+    }
+  }, 
+  "license": "MIT License"
+}
