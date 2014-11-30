@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap",
+  "pages": {
+    "download": "http://getbootstrap.com/getting-started#download",
+    "docs": "http://getbootstrap.com/${VERSION}/",
+    "changelist": "https://github.com/twbs/bootstrap/releases/tag/v${VERSION}",
+    "issues": "https://github.com/twbs/bootstrap/issues",
+    "home": "http://getbootstrap.com/"
+  }, 
+  "detectors": {
+    "version": {
+      "xpath": {
+        "url": "http://getbootstrap.com/", 
+        "xpath": "//p[@class='version']/text()",
+	"regex": "v(\\d.*)"
+      }
+    }
+  }, 
+  "license": "MIT License"
+}
