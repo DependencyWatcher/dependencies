@@ -1,0 +1,19 @@
+{
+  "name": "fontawesome",
+  "pages": {
+    "download": "http://fontawesome.io/",
+    "docs": "http://fontawesome.io/icons/",
+    "issues": "https://github.com/FortAwesome/Font-Awesome/issues",
+    "home": "http://fontawesome.io/"
+  }, 
+  "detectors": {
+    "version": {
+      "xpath": {
+        "url": "http://fontawesome.io/",
+        "xpath": "//div[@class='shameless-self-promotion']/text()[1]",
+	"regex": "(\\d+\\.\\d+[^ ]*)"
+      }
+    }
+  }, 
+  "license": "SIL OFL 1.1"
+}
