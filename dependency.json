@@ -147,7 +147,11 @@
 					"$ref": "#/definitions/detector"
 				},
 				"url": {
-					"description": "Website URL detector",
+					"description": "Official homepage URL detector",
+					"$ref": "#/definitions/detector"
+				},
+				"description": {
+					"description": "Dependency description detector",
 					"$ref": "#/definitions/detector"
 				}
 			},
